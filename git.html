@@ -1,23 +1,84 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Comandos Git</title>
-	</head>
-	<BODY BGCOLOR=BEIGE>
-		<P ALIGN=CENTER><FONT SIZE=5><B>¿Que es git</B></Font></P>
-		<FONT COLOR=TURQUOISE>Es un sistema de manejador de versiones diseñado por Linus Torvalds, enfocado a la gestión de los diversos cambios que se realizan en los elementos del proyecto, coordinando el  trabajo que varias personas realizan al trabajo, lo que significa que un clon local del proyecto es un repositorio de control de versiones completo. Estos repositorios locales plenamente funcionales permiten trabajar sin conexión o de forma remota con facilidad.</FONT>
-		<HR COLOR=YELLOW>
-		<H2><FONT COLOR=PINK>Listado de comandos</FONT></H2>
-		<OL TYPE=a>
-			<LI><A HREF=https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-init#:~:text=The%20git%20init%20command%20creates,run%20in%20a%20new%20project.>init
-			<LI><A HREF=https://www.atlassian.com/git/tutorials/inspecting-a-repository#:~:text=The%20git%20status%20command%20displays,regarding%20the%20committed%20project%20history.>status
-			<LI><A HREF=https://www.atlassian.com/git/tutorials/using-branches#:~:text=In%20Git%2C%20branches%20are%20a,branch%20to%20encapsulate%20your%20changes.>branch
-			<LI><A HREF=https://www.atlassian.com/git/tutorials/using-branches/git-checkout>checkout
-			<LI><A HREF=https://www.atlassian.com/git/tutorials/syncing#:~:text=The%20git%20remote%20command%20lets,direct%20links%20into%20other%20repositories.>remote
-			<LI><A HREF=https://www.atlassian.com/es/git/tutorials/syncing/git-pull>pull
-			<LI><A HREF=https://www.atlassian.com/es/git/tutorials/syncing/git-push#:~:text=El%20comando%20git%20push%20se,local%20a%20un%20repositorio%20remoto.>push
-			<LI><A HREF=https://www-atlassian-com.translate.goog/git/tutorials/setting-up-a-repository/git-clone?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es-419&_x_tr_pto=sc>clone
-			<LI><A HREF=https://www.atlassian.com/git/tutorials/saving-changes/git-commit#:~:text=The%20git%20commit%20command%20captures,you%20explicitly%20ask%20it%20to.>commit
-		</OL>
-	</BODY>
+    <head>
+        <title>Curso Git</title>
+        <link rel="stylesheet" href="stylegit.css">
+    </head>
+    <body>
+        <header>
+            <div class="menu container">
+                <nav class="navbar">
+                    <ul>
+                        <li><a href= "curriculum.html">Inicio</a></li>
+                        <li><a href= "cursogit.html">Curso Git</a></li>
+                        <li><a href= "cursohtml.html">Curso HTML</a></li>
+                        <li><a href= "contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-contant container">
+                <div class="content">
+                    <h1>Curso de Git</h1>
+        </header>
+        <main class="Investigacion">
+            <div class="Significado">
+                <img src="imagenes/imggit.jpg" alt="">
+                <h2>¿Qué es Git?</h2>
+                <p>Git es un Sistema de Control de Versiones Distribuido (DVCS) utilizado para guardar diferentes versiones de un archivo (o conjunto de archivos) para que cualquier versión sea recuperable cuando lo desee.</p>
+            </div>
+            <div class="Significado">
+                <h2>Historia de git</h2>
+                <p>El kernel de Linux es un proyecto de software de código abierto con un alcance bastante amplio. 
+                    Durante la mayor parte del mantenimiento del kernel de Linux (1991-2002), los cambios en el software se realizaban a través de parches y archivos. En el 2002, el proyecto del kernel de Linux empezó a usar un DVCS propietario llamado BitKeeper.</p>
+                <p> En el 2005, la relación entre la comunidad que desarrollaba el kernel de Linux y la compañía que desarrollaba BitKeeper se vino abajo y la herramienta dejó de ser ofrecida de manera gratuita. 
+            </div>
+            <div class="Significado">
+                <img src="imagenes/instalacion.png" alt="">
+                <h2>Instalación</h2>
+                <h3>Windows</h3>
+                <p>La forma más oficial está disponible para ser descargada en el sitio web de Git. Solo se tiene que visitar http://git-scm.com/download/win y la descarga empezará automáticamente. </p>
+                <p>Otra forma de obtener Git fácilmente es mediante la instalación de GitHub para Windows. 
+                    El instalador incluye la versión de línea de comandos y la interfaz de usuario de Git. 
+                    Además funciona bien con Powershell y establece correctamente "caching" de credenciales y configuración CRLF adecuada. 
+                    Se puede descargar este instalador del sitio web de GitHub para Windows en http://windows.github.com.</p>
+                <h3>Linux</h3>
+                <p> A través de un instalador binario, en general se puede hacer mediante la herramienta básica de administración de paquetes que trae la distribución. 
+                    En Fedora, puedes usar yum:
+                    $ yum install git</p>
+                <p>Si es una distribución basada en Debian como Ubuntu, puede usar apt-get:
+                    $ apt-get install git</p>
+                <h3>Mac</h3>
+                <p> la más sencilla es instalando las herramientas Xcode de Línea de Comandos. 
+                    En Mavericks (10.9 o superior) se puede hacer esto desde el Terminal si intentas ejecutar git por primera vez. Si no se tiene instalado, preguntará si desea instalarlo.</p>
+                <p>Si se desea una versión más actualizada, puede hacerlo a partir de un instalador binario. 
+                    Un instalador de Git para OSX es mantenido en la página web de Git. Lo puede descargar en http://git-scm.com/download/mac.</p>
+                <p>Puede instalarlo como parte del instalador de Github para Mac. 
+                    Su interfaz gráfica de usuario tiene la opción de instalar las herramientas de línea de comandos.
+                     Puede descargar esa herramienta desde el sitio web de Github para Mac en http://mac.github.com.</p>
+            </div>
+            <div class="Significado">
+                <h2>Comandos</h2>
+                <OL TYPE=a>
+                    <LI><A HREF=https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-init#:~:text=The%20git%20init%20command%20creates,run%20in%20a%20new%20project.>init
+                    <LI><A HREF=https://www.atlassian.com/git/tutorials/inspecting-a-repository#:~:text=The%20git%20status%20command%20displays,regarding%20the%20committed%20project%20history.>status
+                    <LI><A HREF=https://www.atlassian.com/git/tutorials/using-branches#:~:text=In%20Git%2C%20branches%20are%20a,branch%20to%20encapsulate%20your%20changes.>branch
+                    <LI><A HREF=https://www.atlassian.com/git/tutorials/using-branches/git-checkout>checkout
+                    <LI><A HREF=https://www.atlassian.com/git/tutorials/syncing#:~:text=The%20git%20remote%20command%20lets,direct%20links%20into%20other%20repositories.>remote
+                    <LI><A HREF=https://www.atlassian.com/es/git/tutorials/syncing/git-pull>pull
+                    <LI><A HREF=https://www.atlassian.com/es/git/tutorials/syncing/git-push#:~:text=El%20comando%20git%20push%20se,local%20a%20un%20repositorio%20remoto.>push
+                    <LI><A HREF=https://www-atlassian-com.translate.goog/git/tutorials/setting-up-a-repository/git-clone?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es-419&_x_tr_pto=sc>clone
+                    <LI><A HREF=https://www.atlassian.com/git/tutorials/saving-changes/git-commit#:~:text=The%20git%20commit%20command%20captures,you%20explicitly%20ask%20it%20to.>commit
+                </OL>
+            </div>
+            <footer>
+                        <div class="fuentes">
+                            <h3>Referencias Bibliograficas</h3>
+                            <hr>
+                            <div class="enlace">
+                                <li><a href="https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Una-breve-historia-de-Git">Git - Una breve historia de Git. (s. f.). </a></li>
+                                <li><a href="https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Instalaci%C3%B3n-de-Git">Git - Instalación de Git. (s. f.).</a></li>
+                                <li><a href="https://learn.microsoft.com/es-es/devops/develop/git/what-is-git">M. (2023, 9 febrero). ¿Qué es Git? - Azure DevOps. Microsoft Learn</a></li>
+                        </div>
+            </footer>
+    </body>
 </html>
-
